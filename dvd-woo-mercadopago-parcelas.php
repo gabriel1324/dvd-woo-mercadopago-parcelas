@@ -104,7 +104,7 @@ final class DVDMercadoParcelas
 		$valor =  (float) $product->price;
 
 
-		$desconto = $valor * 0.93;
+		$desconto = $valor * 0;
 
 		$inicio = '<span class="dvd-woo-merc-parcelas-price woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">';
 		$fim    = '</span></span>';
@@ -129,7 +129,7 @@ final class DVDMercadoParcelas
 			'<span class="valor">'.$priceText.'</span> '.
 			// $this->floatToReal($valor).
 				'<span class="parcelado">'.$textParcelado.'</span>'.
-					'<span class="desconto">ou '.$this->floatToReal($desconto).' Boleto (com 7% DESC)</span>'.
+					'<span class="desconto"> ou no'.$this->floatToReal($desconto).' Boleto </span>'.
 
 			$fim
 		;
